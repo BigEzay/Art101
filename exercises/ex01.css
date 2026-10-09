@@ -1,0 +1,24 @@
+hmtl{
+
+}
+
+UL {color: red;}
+
+h1 {
+    background: rgb(62, 84, 173);color: rgb(7, 230, 82)
+}
+
+h2 {
+    background: rgb(14, 55, 103);color: rgb(227, 127, 38)
+}
+
+p {
+    background-color: rgb(167, 102, 167);
+}
+
+IMG {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
