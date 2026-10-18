@@ -23,7 +23,7 @@ IMG {
     width: 50%;
 }
 
-IMG:hover { width: 70%; transistion: linear 1000ms;
+IMG:hover { width: 70%; transition: linear 1000ms;
 
 }
 
