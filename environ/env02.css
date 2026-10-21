@@ -5,3 +5,18 @@ body{
     text-align: center;
     flex: 1;
 }
+
+h1,
+h2,
+h3 {
+    color: #e4610a;
+    font-family: sans-serif;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
