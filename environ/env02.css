@@ -1,16 +1,20 @@
-body{
+body {
     background-image: url("/exercises/recipes/images/night\ city.jpg");
-    font-family: 'Courier New', monospace;
-    color: rgb(235, 79, 12);
-    text-align: center;
-    flex: 1;
+    padding: 50px;
 }
 
 h1,
 h2,
 h3 {
-    color: #e4610a;
+    color: #ff6e06;
     font-family: sans-serif;
+}
+
+#page {
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+    background: rgba(28, 17, 179, 0.744);
+    padding: 30px;
 }
 
 img {
@@ -20,3 +24,17 @@ img {
     width: 50%;
 }
 
+main {
+    background: #fff7e8;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+main h1 {
+    margin-top: 0;
+}
+
+main a {
+    color: #1d1184;
+    font-weight: bold;
+}
