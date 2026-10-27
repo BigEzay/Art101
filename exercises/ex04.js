@@ -3,6 +3,7 @@
 // we create a variable named "count", the initia; value is 0
 
 let count=0;
+let colorsCount=0;
 
 // an indexed array of data
 let colors=["green", "orange", "brown", "yellow", "gold", "purple", "red", "pink"];
@@ -19,17 +20,30 @@ $("#needy-button").click( function(){
     count = count +1; 
 
     console.log(count);
-    console.log(colors[count-1]);
+    console.log(colors[colorsCount]);
 
     // now let's find our button and set a new text for it
 
-    buttonText="I was kicked " + count + " times and color is " + colors[count-1];
+    buttonText="I was kicked " + count + " times and color is " + colors[colorsCount];
 
     $("#needy-button").html( buttonText ); 
 
-    $("body").css( "background-color", colors[count-1] );
+    $("body").css( "background-color", colors[colorsCount] );
 
-    $("body").append(" <img width='50' src='" +colors[count-1]  +".jpg'>" );
+    //$("body").append(" <img width='50' src='" +colors[count-1]  +".jpg'>" );
+
+    if( count >= 5 ) { $("needy-button").after("<p>My mood is ... agititaed</p>"); }
+
+    if( count >= 13 ) { $("needy-button").after("<p>My mood is ... really agititaed</p>"); }
+
+
+
+    // if we run out fo colors start from the first one anew
+
+    colorsCount = colorsCount +1;
+
+    if ( colorsCount >= 8) { colorsCount = 0; }
  
 
 });
+
